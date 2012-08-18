@@ -61,7 +61,7 @@ public class SiteIconCache {
 			ImageContainer.addImage(iconUrl, image);
 	}
 	
-	private static Pattern urlPttern = Pattern.compile("^(http(?:|s))://([^:/]+)(?::(\\d*)|)(/.*|)");
+	private static Pattern urlPttern = Pattern.compile("^(http(?:|s))://([^:/]+)(?::(¥¥d*)|)(/.*|)");
 	private static String rootIconUrl (final String url) {
 		Matcher matcher = urlPttern.matcher(url);
 		if(matcher.find()){

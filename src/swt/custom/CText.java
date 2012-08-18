@@ -32,7 +32,7 @@ public class CText extends Composite {
 		label.setBackground(display.getSystemColor(SWT.COLOR_WHITE));
 		
 		text = new Text(this,SWT.SINGLE|SWT.BORDER);
-		text.setFont(new Font(display,new FontData("MS ÉSÉVÉbÉN",10,SWT.NONE)));
+		text.setFont(new Font(display,new FontData("MS „Ç¥„Ç∑„ÉÉ„ÇØ",10,SWT.NONE)));
 		text.setBackground(display.getSystemColor(SWT.COLOR_WHITE));
 		text.setLayoutData(new GridData(GridData.FILL_BOTH));
 		text.addMouseListener(new MouseListener() {

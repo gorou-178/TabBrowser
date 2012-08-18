@@ -112,9 +112,9 @@ public class HttpClientWrapper {
 				if( ! StringUtils.EMPTY.equals( proxyUserName ) || ! StringUtils.EMPTY.equals( proxyUserPass ) ){
 					method.setRequestHeader ("Proxy-Authorization", "Basic " + baseEncode );
 				}
-				// ƒRƒlƒNƒVƒ‡ƒ“ƒ^ƒCƒ€ƒAƒEƒgİ’è(Ú‘±Š®—¹‚Ü‚Å‚Ìƒ^ƒCƒ€ƒAƒEƒgİ’è)
+				// ã‚³ãƒã‚¯ã‚·ãƒ§ãƒ³ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆè¨­å®š(æ¥ç¶šå®Œäº†ã¾ã§ã®ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆè¨­å®š)
 				client.getHttpConnectionManager().getParams().setConnectionTimeout(5000);
-				// ƒ\ƒPƒbƒgƒ^ƒCƒ€ƒAƒEƒgİ’è(Ú‘±‚µ‚Ä‚©‚çƒŒƒXƒ|ƒ“ƒX‚ª•Ô‚é‚Ü‚Å‚Ìƒ^ƒCƒ€ƒAƒEƒgİ’è)
+				// ã‚½ã‚±ãƒƒãƒˆã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆè¨­å®š(æ¥ç¶šã—ã¦ã‹ã‚‰ãƒ¬ã‚¹ãƒãƒ³ã‚¹ãŒè¿”ã‚‹ã¾ã§ã®ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆè¨­å®š)
 				client.getParams().setSoTimeout(5000);
 				client.executeMethod( proxy, method );
 			}
@@ -154,7 +154,7 @@ public class HttpClientWrapper {
 		if( is == null )
 			return new byte [0];
 		
-		// byte”z—ñ‚É‘‚«‚±‚Ş
+		// byteé…åˆ—ã«æ›¸ãã“ã‚€
 		ByteArrayOutputStream baos = null;
 		try {
 			baos = new ByteArrayOutputStream();
